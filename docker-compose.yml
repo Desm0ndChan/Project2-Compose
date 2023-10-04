@@ -14,6 +14,9 @@ services:
       jenkins:
         aliases:
           - docker
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
 
   jenkins:
     image: jenkins/jenkins:lts-jdk11
