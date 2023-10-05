@@ -2,7 +2,7 @@ version: '3.8'
 services:
   dind:
     image: docker:dind
-    container_name: dind
+    container_name: dind-isec6000-assessment2
     privileged: true
     environment:
       DOCKER_TLS_CERTDIR: "/certs"
@@ -20,7 +20,7 @@ services:
 
   jenkins:
     image: jenkins/jenkins:lts-jdk11
-    container_name: jenkins
+    container_name: jenkins-isec6000-assessment2
     restart: unless-stopped
     environment:
       DOCKER_HOST: "tcp://docker:2376"
